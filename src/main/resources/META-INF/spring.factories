@@ -1,0 +1,3 @@
+org.springframework.boot.autoconfigure.EnableAutoConfiguration=\
+com.buyi.core.config.WebMvcConfiguration,\
+com.buyi.core.config.RedisConfiguration
