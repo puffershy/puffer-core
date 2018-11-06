@@ -20,6 +20,7 @@ public class MySQLDialect extends Dialect {
 	 * @param limit
 	 * @return
 	 */
+	@Override
 	public String getLimitString(String sql, int offset, int limit) {
 		StringBuffer buf = new StringBuffer(sql.length() + 20);
 		buf.append("SELECT * from (" + sql + ") tt");
