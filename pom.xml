@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?>
+﻿<?xml version="1.0" encoding="UTF-8"?>
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
@@ -8,9 +8,9 @@
         <version>0.0.1-SNAPSHOT</version>
     </parent>
 
-    <artifactId>buyi-framework-core</artifactId>
+    <artifactId>buyi-core</artifactId>
     <packaging>jar</packaging>
-    <description>spring boot项目核心架包</description>
+    <description>spring boot项目核心架包，封装第三方架包，方便开发</description>
 
     <properties>
     </properties>
