@@ -17,7 +17,7 @@ public class OpResponse<C> {
     private C content;
 
 
-    private OpResponse(String code, String message) {
+    public OpResponse(String code, String message) {
         this.code = code;
         this.message = message;
     }
