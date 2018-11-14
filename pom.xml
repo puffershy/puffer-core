@@ -14,7 +14,7 @@
     <description>spring boot项目核心架包，封装第三方架包，方便开发</description>
 
     <properties>
-        <buyi-util.version>0.0.1-SNAPSHOT</buyi-util.version>
+        <buyi-util.version>1.0.0</buyi-util.version>
     </properties>
 
     <dependencies>
