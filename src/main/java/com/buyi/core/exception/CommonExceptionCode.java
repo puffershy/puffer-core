@@ -11,7 +11,10 @@ public enum CommonExceptionCode {
     SUCCESS("0", "成功"),
     SYS_ERROR("000001", "系统异常"),
     BAD_REQUEST("000002", "无效请求"),
-    BAD_PARAMETER("000003", "参数异常");
+    BAD_PARAMETER("000003", "参数异常"),
+    UNAUTHORIZED("000004","权限不足");
+
+
 
     private String code;
     private String message;
