@@ -28,4 +28,8 @@ public enum CommonExceptionCode {
     public String getMessage() {
         return message;
     }
+
+    public ApplicationException exception(){
+        return ApplicationException.newInstance(getCode(),getMessage());
+    }
 }

@@ -20,11 +20,11 @@ public class ApplicationException extends RuntimeException {
         this.code = code;
     }
 
-    public ApplicationException newInstance(String code, String message) {
+    public static ApplicationException newInstance(String code, String message) {
         return new ApplicationException(code, message);
     }
 
-    public ApplicationException newInstance(String code, String message, Throwable throwable) {
+    public static ApplicationException newInstance(String code, String message, Throwable throwable) {
         return new ApplicationException(code, message, throwable);
     }
 
