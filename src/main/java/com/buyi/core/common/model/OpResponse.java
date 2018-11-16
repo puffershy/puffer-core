@@ -1,5 +1,6 @@
 package com.buyi.core.common.model;
 
+import com.buyi.core.exception.CommonExceptionCode;
 import lombok.Builder;
 import lombok.Data;
 
@@ -22,7 +23,11 @@ public class OpResponse<C> {
         this.message = message;
     }
 
-    public static OpResponse newInstance(String code, String message) {
+    public static <C>  OpResponse<C> newInstance(String code, String message) {
         return new OpResponse(code, message);
+    }
+
+    public static<C>  OpResponse<C> success(){
+        return new OpResponse(CommonExceptionCode.SUCCESS.getCode(),CommonExceptionCode.SUCCESS.getMessage());
     }
 }
