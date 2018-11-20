@@ -7,6 +7,7 @@ import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.http.MediaType;
 import org.springframework.http.converter.HttpMessageNotReadableException;
+import org.springframework.validation.BindException;
 import org.springframework.validation.BindingResult;
 import org.springframework.validation.FieldError;
 import org.springframework.web.bind.MethodArgumentNotValidException;
@@ -43,7 +44,7 @@ public class GlobalHandlerExceptionResolver extends AbstractHandlerExceptionReso
             if (ex instanceof ApplicationException) {
                 // 如果是自定义业务异常
                 opResponse = resolveApplicationException(response, ex);
-            } else if (ex instanceof MethodArgumentNotValidException || ex instanceof MissingServletRequestParameterException || ex instanceof HttpMessageNotReadableException) {
+            } else if (ex instanceof BindException || ex instanceof MethodArgumentNotValidException || ex instanceof MissingServletRequestParameterException || ex instanceof HttpMessageNotReadableException) {
                 // 如果是参数异常
                 opResponse = resolveParameterException(response, ex);
             }
@@ -71,6 +72,17 @@ public class GlobalHandlerExceptionResolver extends AbstractHandlerExceptionReso
         if (ex instanceof MethodArgumentNotValidException) {
             MethodArgumentNotValidException validException = (MethodArgumentNotValidException) ex;
             BindingResult bindingResult = validException.getBindingResult();
+            String message = CommonExceptionCode.BAD_PARAMETER.getMessage();
+            FieldError fieldError = bindingResult.getFieldError();
+            if (fieldError != null) {
+                message = fieldError.getDefaultMessage();
+            }
+
+            return OpResponse.newInstance(CommonExceptionCode.BAD_PARAMETER.getCode(), message);
+        }else if(ex instanceof BindException){
+            BindException bindException = (BindException) ex;
+            BindingResult bindingResult = bindException.getBindingResult();
+
             String message = CommonExceptionCode.BAD_PARAMETER.getMessage();
             FieldError fieldError = bindingResult.getFieldError();
             if (fieldError != null) {
