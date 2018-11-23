@@ -12,9 +12,7 @@ public enum CommonExceptionCode {
     SYS_ERROR("000001", "系统异常"),
     BAD_REQUEST("000002", "无效请求"),
     BAD_PARAMETER("000003", "参数异常"),
-    UNAUTHORIZED("000004","权限不足");
-
-
+    UNAUTHORIZED("000004", "权限不足");
 
     private String code;
     private String message;
@@ -32,7 +30,11 @@ public enum CommonExceptionCode {
         return message;
     }
 
-    public ApplicationException exception(){
-        return ApplicationException.newInstance(getCode(),getMessage());
+    public ApplicationException exception() {
+        return exception(getMessage());
+    }
+
+    public ApplicationException exception(String message) {
+        return ApplicationException.newInstance(getCode(), message);
     }
 }
