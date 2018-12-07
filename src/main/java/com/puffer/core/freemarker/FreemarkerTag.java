@@ -1,4 +1,4 @@
-package com.buyi.core.freemarker;
+package com.puffer.core.freemarker;
 
 import java.lang.annotation.ElementType;
 import java.lang.annotation.Retention;
@@ -19,7 +19,7 @@ import org.springframework.stereotype.Component;
 @Target(ElementType.TYPE)
 @Retention(RetentionPolicy.RUNTIME)
 @Component
-public @interface FreemarkerShiroTag {
+public @interface FreemarkerTag {
 
 	String value();
 

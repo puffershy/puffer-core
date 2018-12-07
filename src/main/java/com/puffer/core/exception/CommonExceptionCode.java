@@ -1,4 +1,4 @@
-package com.buyi.core.exception;
+package com.puffer.core.exception;
 
 /**
  * 公用异常码

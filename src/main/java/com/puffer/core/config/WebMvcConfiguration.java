@@ -1,10 +1,10 @@
-package com.buyi.core.config;
+package com.puffer.core.config;
 
 import com.alibaba.fastjson.parser.Feature;
 import com.alibaba.fastjson.serializer.SerializerFeature;
 import com.alibaba.fastjson.support.config.FastJsonConfig;
 import com.alibaba.fastjson.support.spring.FastJsonHttpMessageConverter4;
-import com.buyi.core.exception.GlobalHandlerExceptionResolver;
+import com.puffer.core.exception.GlobalHandlerExceptionResolver;
 import com.google.common.base.Charsets;
 import org.springframework.boot.autoconfigure.condition.ConditionalOnWebApplication;
 import org.springframework.context.annotation.Bean;

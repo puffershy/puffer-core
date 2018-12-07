@@ -1,4 +1,4 @@
-package com.buyi.core.context.mybatis;
+package com.puffer.core.context.mybatis;
 
 import java.lang.reflect.Field;
 import java.util.ArrayList;

@@ -1,4 +1,4 @@
-package com.buyi.core.context.mybatis;
+package com.puffer.core.context.mybatis;
 
 /**
  * 数据库方言

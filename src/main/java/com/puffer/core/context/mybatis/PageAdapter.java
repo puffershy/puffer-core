@@ -1,4 +1,4 @@
-package com.buyi.core.context.mybatis;
+package com.puffer.core.context.mybatis;
 
 import java.util.ArrayList;
 import java.util.HashMap;
@@ -6,7 +6,7 @@ import java.util.List;
 import java.util.Map;
 
 import com.alibaba.fastjson.JSONObject;
-import com.buyi.core.common.model.Page;
+import com.puffer.core.common.model.Page;
 import com.google.common.collect.Lists;
 
 /**

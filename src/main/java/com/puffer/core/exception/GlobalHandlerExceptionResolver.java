@@ -1,7 +1,7 @@
-package com.buyi.core.exception;
+package com.puffer.core.exception;
 
 import com.alibaba.fastjson.JSON;
-import com.buyi.core.common.model.OpResponse;
+import com.puffer.core.common.model.OpResponse;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Value;

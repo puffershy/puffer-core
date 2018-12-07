@@ -1,4 +1,4 @@
-package com.buyi.core.log;
+package com.puffer.core.log;
 
 import lombok.Data;
 

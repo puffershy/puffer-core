@@ -1,4 +1,4 @@
-package com.buyi.core.common.model;
+package com.puffer.core.common.model;
 
 import java.io.Serializable;
 import java.util.List;

@@ -1,4 +1,4 @@
-package com.buyi.core.context.mybatis;
+package com.puffer.core.context.mybatis;
 
 import java.lang.annotation.Annotation;
 import java.lang.annotation.Documented;

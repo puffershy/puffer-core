@@ -1,4 +1,4 @@
-package com.buyi.core.common.util;
+package com.puffer.core.common.util;
 
 import java.util.concurrent.TimeUnit;
 

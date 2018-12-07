@@ -1,7 +1,6 @@
-package com.buyi.core.common.model;
+package com.puffer.core.common.model;
 
-import com.buyi.core.exception.CommonExceptionCode;
-import lombok.Builder;
+import com.puffer.core.exception.CommonExceptionCode;
 import lombok.Data;
 
 /**

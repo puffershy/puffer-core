@@ -1,4 +1,4 @@
-package com.buyi.core.config;
+package com.puffer.core.config;
 
 import org.springframework.boot.autoconfigure.condition.ConditionalOnProperty;
 import org.springframework.context.annotation.Bean;

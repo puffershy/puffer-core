@@ -1,4 +1,4 @@
-package com.buyi.core.intercept;
+package com.puffer.core.intercept;
 
 import javax.servlet.http.HttpServletRequest;
 

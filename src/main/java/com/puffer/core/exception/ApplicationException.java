@@ -1,4 +1,4 @@
-package com.buyi.core.exception;
+package com.puffer.core.exception;
 
 /**
  * 应用异常

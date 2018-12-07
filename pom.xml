@@ -4,24 +4,24 @@
     <modelVersion>4.0.0</modelVersion>
     <parent>
         <groupId>com.framework</groupId>
-        <artifactId>buyi-parent</artifactId>
+        <artifactId>puffer-parent</artifactId>
         <version>1.0.0</version>
     </parent>
 
-    <artifactId>buyi-core</artifactId>
+    <artifactId>puffer-core</artifactId>
     <version>1.0.0</version>
     <packaging>jar</packaging>
     <description>spring boot项目核心架包，封装第三方架包，方便开发</description>
 
     <properties>
-        <buyi-util.version>1.0.0</buyi-util.version>
+        <puffer-util.version>1.0.0</puffer-util.version>
     </properties>
 
     <dependencies>
         <dependency>
             <groupId>com.framework</groupId>
-            <artifactId>buyi-util</artifactId>
-            <version>${buyi-util.version}</version>
+            <artifactId>puffer-util</artifactId>
+            <version>${puffer-util.version}</version>
         </dependency>
 
         <dependency>
