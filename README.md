@@ -1,4 +1,4 @@
-# buyi-core
+# puffer-core
 整合第三方框架，并对第三那方框架进行包装
 
 
